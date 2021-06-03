@@ -1,4 +1,4 @@
-![몽실이네독서실](./docs/0_images/brand.png)
+<p align="center"><img src="./docs/0_images/brand.png"></p>
 
 # 몽실이네 독서실(MongDok)
 
@@ -51,11 +51,11 @@
 
 ## Project Summary 📙
 
-- **Duration** 
+- **Duration**
 
   Apr 12th 2021 ~ May 28th 2021
 
-- **Purpose** 
+- **Purpose**
 
   비대면이 익숙한 MZ세대에게 화상공유를 통해 다른 사용자와 함께 공부하며 자기 주도 학습을 할 수 있는 환경을 제공
 
@@ -79,7 +79,7 @@
   >
   > 누군가에게 관찰되고 있다는 것을 인지함으로써 그 행동이나 일의 능률이 향상하는 것
 
-- **내 책상 꾸미기(Style Your Desk)** 
+- **내 책상 꾸미기(Style Your Desk)**
 
   공부 달력, 다짐, 메모, D-DAY 등 내 책상을 꾸미며 자신의 공부를 관리
 
@@ -91,7 +91,7 @@
 
 - **스터디 캘린더(Study Calendar)**
 
-  공부한 시간만큼 진하기를 달리하여 공부량을 시각적으로 확인. 
+  공부한 시간만큼 진하기를 달리하여 공부량을 시각적으로 확인.
 
   하루 총 공부량도 확인할 수 있음.
 
@@ -108,7 +108,7 @@
 - Project Setup
 
   - ```bash
-    $ npm install 
+    $ npm install
     ```
 
 - Compiles and hot-reloads for development
@@ -146,6 +146,7 @@
 - Docker
 
   - redis
+
     - pull image
 
       ```bash
@@ -158,7 +159,7 @@
       $ docker run --name mongdok-redis -p 6388:6379 --network redis-net redis --appendonly yes --requirepass {your password} &
       ```
 
-  - mariadb 
+  - mariadb
 
     - pull image
 
@@ -178,7 +179,7 @@
 
     - run container
 
-      ``` bash
+      ```bash
       $ docker run -d -p 2000:8081 --name mongdok_desk --restart=always mongdok_desk
       ```
 
@@ -188,7 +189,7 @@
 
     - run container
 
-      ``` bash
+      ```bash
       $ docker run -d -p 8080:8080 --name mongdok-login --restart=always mongdok_login
       ```
 
@@ -198,9 +199,9 @@
 
     - pull image & run container
 
-      ``` bash
+      ```bash
       $sudo docker build -t mongdok_roomapi /home/ubuntu/jenkins/deploy/.
-      
+
       $docker run -p 8084:8084 --name mongdok_roomapi --rm --network roomapi-net mongdok_roomapi &
       ```
 
@@ -270,10 +271,12 @@
 
 📌 [설계](./docs/2_design) - 시퀀스 다이어그램, 아키텍처 설계, 와이어 프레임, 사용자 상태 정리, 프로토타입
 
-📌 [개발](./docs/3_develop) - 개발 컨벤션, 깃 컨벤션, 개발 관련 자료 정리 
+📌 [개발](./docs/3_develop) - 개발 컨벤션, 깃 컨벤션, 개발 관련 자료 정리
 
-📌 [로그](./docs/4_log) - 개발 로그 
+📌 [로그](./docs/4_log) - 개발 로그
 
 <br>
 
-![몽실이](./docs/0_images/몽실이_투명.png)
+<p align="center"><img src="./docs/0_images/몽실이_투명.png"></p>
+
+.
